@@ -1,0 +1,185 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W3  @MULFF64.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W3  @SI64TOF64.P3
+W0 -W2  @ADDFF48.P4
+W0 -W1  @DIV3232B.P5
+W0 -W3  @MULS6464.P6
+W0 -W3  @ADDFF64.P7
+W0 -W2  @MULS4848.P8
+W0 -W1  @MULFF.P9
+W0 -W3  @DIVS6464.P10
+W0 -W2  @DIVS4848.P11
+W0      @SITOF.P12
+W0 -W1  @DIVFF.P13
+W0 -W1  @ADDFF.P14
+W0 -W3  @DIVFF64.P15
+W0      @delay_ms1.P16
+W0 -W1  @MUL3232.P17
+W0 -W1  @PRINTFU32_230400_5720_5727.P18
+W0 -W2  @MULFF48.P19
+W0 -W2  @DIVFF48.P20
+W0      @PRINTFU16_230400_5720_5727.P21
+W0 -W3  @SI64TOF48.P22
+W0 -W1  @DIVS3232A.P23
+W0 -W1  @MULS3232.P24
+W0      @delay_us1.P25
+W1      @SCRATCH
+W1      @WRITE_PACKED_MEMORY.P1
+W1      @READ_PACKED_MEMORY.P2
+W2 -W3  @SPI_XFER_2.P1
+W2 -W3  @MULS3232.P2
+W2 -W3  @DIVFF.P3
+W2 -W3  @MULFF.P4
+W2 -W3  @DIV3232B.P5
+W2 -W3  @SPI_XFER_3.P6
+W2      @READ_PACKED_MEMORY.P7
+W2 -W3  @SPI_XFER_1.P8
+W2 -W3  @ADDFF.P9
+W2      @WRITE_PACKED_MEMORY.P10
+W2 -W3  @MUL3232.P11
+W2 -W3  @DIVS3232A.P12
+W2 -W3  @SPI_XFER_4.P13
+W2      @READ_ROM_MEMORY.P14
+W3 -W5  @ADDFF48.P1
+W3      @READ_PACKED_MEMORY.P2
+W3      @READ_ROM_MEMORY.P3
+W3 -W5  @MULS4848.P4
+W3 -W5  @DIVS4848.P5
+W3 -W5  @MULFF48.P6
+W3 -W5  @DIVFF48.P7
+W3      @WRITE_PACKED_MEMORY.P8
+W4      @SPI_XFER_3.P1
+W4 -W7  @DIVFF64.P2
+W4      @PRINTFU16_230400_5720_5727.P3
+W4 -W7  @MULS6464.P4
+W4 -W7  @ADDFF64.P5
+W4      @SPI_XFER_4.P6
+W4      @SPI_XFER_2.P7
+W4 -W7  @MULFF64.P8
+W4 -W7  @DIVS6464.P9
+W4      @PRINTFU32_230400_5720_5727.P10
+W4      @SPI_XFER_1.P11
+540.3   C1OUT
+544.3   C2OUT
+548.3   C3OUT
+54C.3   C4OUT
+750     ACLKCON
+750.6   FRCSEL
+750.7   ASRCSEL
+751.0   APSTSCLR0
+751.1   APSTSCLR1
+751.2   APSTSCLR2
+751.5   SELACLK
+751.6   APLLCK
+751.7   ENAPLL
+800-801 strtok.save
+802-805 _Randseed
+806-809 result
+80A-E49 data
+E4A-E4B count
+E4C.0   enable
+E4C.1   captured
+E4C.2   cmd_exists
+E4C.3   exit
+E4D     c
+E4E-E51 TimerValue
+E52-E6A str
+E6B     term
+E6C-E6D ptr
+E6E-E6F i
+E70-E71 GainA
+E72-E73 GainB
+E74-E75 temp
+E76-E79 DelayPeriod
+E7A-E7B atoi.s
+E7A-E7B strtok.s1
+E7A-E7B atol.s
+E7C-E7D atoi.result
+E7C-E7D strtok.s2
+E7C-E7F atol.result
+E7E-E7F atoi.sign
+E7E-E7F strtok.beg
+E80-E81 atoi.base
+E80-E81 atol.sign
+E80-E81 strtok.end
+E82-E83 atol.base
+E82-E83 atoi.index
+E84     atoi.c
+E84-E85 atol.index
+E86-E87 strspn.s1
+E86-E87 strpbrk.s1
+E86     atol.c
+E88-E89 strspn.s2
+E88-E89 strpbrk.s2
+E8A-E8B strpbrk.sc1
+E8A-E8B strspn.sc1
+E8C-E8D strspn.sc2
+E8C-E8D strpbrk.sc2
+F80-FFF Stack
+
+ROM Allocation:
+000200  @const1063.call
+00020E  @const1072.call
+00021C  get_cmd
+0002AC  @SPI_XFER_1
+0002F2  @SPI_XFER_2
+000338  @SPI_XFER_3
+00037E  @SPI_XFER_4
+0003C4  reset_pot
+0003FE  init_adc
+000426  strspn
+000470  strpbrk
+0004B4  strtok
+00050E  @MULS3232
+000550  atol
+00073C  atoi
+0008D8  parse_cmd
+0009B6  @delay_us1
+0009C6  get_data
+000A3A  @PRINTFU16_230400_5720_5727
+000AEC  @DIV3232B
+000B30  @PRINTFU32_230400_5720_5727
+000BF8  send_data
+000C4A  @cinit1
+000C4A  MAIN
+000CE8  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    F:\ISIS\2015\DE1\dsPIC33\
+
+Project Files:
+    dsPIC33OSC.c                                            [19-Thg5-16 17:07  CRC=B52F5886]
+    C:\Program Files (x86)\PICC\Devices\33fj16gs502.h       [12-Thg11-13 14:36  CRC=4CAA7B68]
+    C:\Program Files (x86)\PICC\Drivers\stdlib.h            [08-Thg6-11 14:39  CRC=0B6669CF]
+    C:\Program Files (x86)\PICC\Drivers\stddef.h            [16-Thg7-10 09:27  CRC=897CEC6C]
+    C:\Program Files (x86)\PICC\Drivers\string.h            [07-Thg4-16 16:22  CRC=8E15B478]
+    C:\Program Files (x86)\PICC\Drivers\ctype.h             [03-Thg1-08 13:55  CRC=2D1F019F]
+
+Source signature=7F10E1DF
+
+Units:
+    dsPIC33OSC (main)
+
+Compiler Settings:
+    Processor:      DSPIC33FJ16GS502
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+
+Output Files:
+    XREF file:   dsPIC33OSC.xsym
+    Errors:      dsPIC33OSC.err
+    Ext Symbols: dsPIC33OSC.esym
+    INHX8:       dsPIC33OSC.hex
+    Symbols:     dsPIC33OSC.sym
+    List:        dsPIC33OSC.lst
+    Debug/COFF:  dsPIC33OSC.cof
+    Project:     dsPIC33OSC.ccspjt
+    Call Tree:   dsPIC33OSC.tre
+    Statistics:  dsPIC33OSC.STA

@@ -1,0 +1,26 @@
+[PROJECT]
+Target=dsPIC33OSC.hex
+Processor_Text=DSPIC33FJ16GS502
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=dsPIC33OSC.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\C:\Program Files (x86)\PICC\Devices\C:\Program Files (x86)\PICC\Devices\
+[dsPIC33OSC.c]
+Type=4
+[mru-list]
+1=dsPIC33OSC.c
+[Opened Files]
+1=dsPIC33OSC.c
+2=
+3=
+[Documentation]
+1=F:\ISIS\2015\DE1\dsPIC33\dsPIC33OSC Notes.txt
+1T=dsPIC33OSC Notes.txt
+1E=
+1W=0
+Count=1
+[Units]
+Count=1
+1=dsPIC33OSC (main)
