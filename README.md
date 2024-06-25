@@ -11,8 +11,3 @@ https://github.com/tranvantu/Simple-USB-Oscilloscope <br>
  Video : 
 <br>
 [![Video hoạt động](https://img.youtube.com/vi/J3fFm_CznlM/0.jpg)](https://www.youtube.com/watch?v=KbOZ_1Kjlxc)
-## Liên hệ
-tranvantu.tvt@gmail.com
-<br>
-+84914220760
-
